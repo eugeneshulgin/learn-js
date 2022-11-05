@@ -1,0 +1,36 @@
+.one {
+	margin: 15px;
+	border: 2px solid black;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	border-radius: 50px;
+}
+
+.one {
+	box-shadow: 2px 2px 3px #000000, 4px 4px 5px rgb(255, 255, 255);
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.one:active {
+	box-shadow: .5px .5px 1px #000000, .5px .5px 1px rgb(255, 255, 255);
+	top: 1px;
+	left: 1px;
+
+}
+
+.but {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(40, 63, 118);
+}
+
+.block {
+	text-align: center;
+	margin: 15px;
+}
