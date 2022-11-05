@@ -57,21 +57,21 @@
 
 ////////						 test 2
 
-let number = 7;
-switch (number) {
-	case 0:
-		console.log('Вы ввели число 0');
-		break;
-	case 1:
-		console.log('Вы ввели число 1');
-		break;
-	case 2:
-	case 3:
-		console.log('Вы ввели число 2, а может и 3');
-		break;
-	default:
-		console.log('Вы ввели число большее 3');
-}
+// let number = 7;
+// switch (number) {
+// 	case 0:
+// 		console.log('Вы ввели число 0');
+// 		break;
+// 	case 1:
+// 		console.log('Вы ввели число 1');
+// 		break;
+// 	case 2:
+// 	case 3:
+// 		console.log('Вы ввели число 2, а может и 3');
+// 		break;
+// 	default:
+// 		console.log('Вы ввели число большее 3');
+// }
 
 //////////////////////////////////////////////////////////////////////
 
@@ -79,49 +79,49 @@ switch (number) {
 
 // 			1 пример for
 
-let div = document.querySelectorAll('.one');
-console.log(div);
+// let div = document.querySelectorAll('.one');
+// console.log(div);
 
-for (let i = 0; i < div.length; i++){
-	console.log(div[i]);
-	div[i].style.background = 'red'; // меняем цвет div по циклу
-	// if(i == 4 ) break; // принудительно остановить
-	div[i].onclick = two; // по клику выполняем function	
-}
+// for (let i = 0; i < div.length; i++){
+// 	console.log(div[i]);
+	// div[i].style.background = 'red'; // меняем цвет div по циклу
+// 	// if(i == 4 ) break; // принудительно остановить
+// 	div[i].onclick = two; // по клику выполняем function	
+// }
 
-function two() {
-	console.log('work!!!');
+// function two() {
+// 	console.log('work!!!');
 
-}
+// }
 
 //////////////////////////////////////////////////////////////////////
 
 // 			1-1 пример for
 
-let b = document.getElementsByClassName('one');
-console.log(b);
-for(let i = 0; i < b.length; i++){
-	b[i].style.background = 'green';
-	b[i].onclick = two;
-}
+// let b = document.getElementsByClassName('one');
+// console.log(b);
+// for(let i = 0; i < b.length; i++){
+// 	b[i].style.background = 'green';
+// 	b[i].onclick = two;
+// }
 
-function two() {
-	console.log('work!!!');
-}
+// function two() {
+// 	console.log('work!!!');
+// }
 
 //////////////////////////////////////////////////////////////////////
 
 // 			2 пример for
 
-document.querySelector('button').onclick = () => {
-	let r = document.querySelectorAll('input[type="radio"]');
-	console.log(r);
-	for (let i = 0; i< r.length; i++){
-		if(r[i].checked){
-			console.log(r[i].value, r[i].innerHTML )
-		}
-	}
-}
+// document.querySelector('button').onclick = () => {
+// 	let r = document.querySelectorAll('input[type="radio"]');
+// 	console.log(r);
+// 	for (let i = 0; i< r.length; i++){
+// 		if(r[i].checked){
+// 			console.log(r[i].value, r[i].innerHTML )
+// 		}
+// 	}
+// }
 
 //////////////////////////////////////////////////////////////////////
 
