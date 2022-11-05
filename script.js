@@ -98,30 +98,30 @@
 
 // 			1-1 пример for
 
-// let b = document.getElementsByClassName('one');
-// console.log(b);
-// for(let i = 0; i < b.length; i++){
-// 	b[i].style.background = 'green';
-// 	b[i].onclick = two;
-// }
+let b = document.getElementsByClassName('one');
+console.log(b);
+for(let i = 0; i < b.length; i++){
+	b[i].style.background = 'green';
+	b[i].onclick = two;
+}
 
-// function two() {
-// 	console.log('work!!!');
-// }
+function two() {
+	console.log('work!!!');
+}
 
 //////////////////////////////////////////////////////////////////////
 
 // 			2 пример for
 
-// document.querySelector('button').onclick = () => {
-// 	let r = document.querySelectorAll('input[type="radio"]');
-// 	console.log(r);
-// 	for (let i = 0; i< r.length; i++){
-// 		if(r[i].checked){
-// 			console.log(r[i].value, r[i].innerHTML )
-// 		}
-// 	}
-// }
+document.querySelector('button').onclick = () => {
+	let r = document.querySelectorAll('input[type="radio"]');
+	console.log(r);
+	for (let i = 0; i< r.length; i++){
+		if(r[i].checked){
+			console.log(r[i].value, r[i].innerHTML )
+		}
+	}
+}
 
 //////////////////////////////////////////////////////////////////////
 
