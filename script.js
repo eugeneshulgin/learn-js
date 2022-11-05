@@ -55,16 +55,18 @@
 
 ////////						 test 2
 
-// let number = 3;
-// switch (number) {
-// 	case 0:
-// 		console.log('Вы ввели число 0');
-// 		break;
-// 	case 1:
-// 		console.log('Вы ввели число 1');
-// 		break;
-// 	case 2:
-// 	case 3:
-// 		console.log('Вы ввели число 2, а может и 3');
-// 		break;
-// }
+let number = 7;
+switch (number) {
+	case 0:
+		console.log('Вы ввели число 0');
+		break;
+	case 1:
+		console.log('Вы ввели число 1');
+		break;
+	case 2:
+	case 3:
+		console.log('Вы ввели число 2, а может и 3');
+		break;
+	default:
+		console.log('Вы ввели число большее 3');
+}
