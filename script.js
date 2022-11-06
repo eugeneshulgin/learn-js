@@ -171,8 +171,6 @@
 // 	console.log('work!!!');
 // }
 
-//////////////////////////////////////////////////////////////////////
-
 // 			2 пример for
 
 // document.querySelector('button').onclick = () => {
@@ -200,8 +198,6 @@
 // 	out.innerHTML += '<br>';
 // }
 
-//////////////////////////////////////////////////////////////////////
-
 // 			2 пример Вложенные циклы
 
 // let out = document.querySelector('.out');
@@ -224,18 +220,14 @@
 // console.log(text1);
 // console.log(text1q);
 
-// //////////////////////////////////////////////////////////////////////
-
-// // 			2 пример применение кавычек
+//  			2 пример применение кавычек
 
 // const text2 = `I enjoy sport, 'watch TV' and often 'write code'`;
 // const text2q = "I enjoy sport, \'watch TV\' and often \"write code\"";
 // console.log(text2);
 // console.log(text2q);
 
-// //////////////////////////////////////////////////////////////////////
-
-// // 			3 пример мультистроки
+// 			3 пример мультистроки
 
 // const text3 = `
 // I enjoy sport
@@ -244,9 +236,7 @@
 // `
 // console.log(text3);
 
-// //////////////////////////////////////////////////////////////////////
-
-// // 			4 пример Интерполяция - переменные
+//  			4 пример Интерполяция - переменные
 
 // const n4 = 'коды';
 // const text4 = `Кто пишет ${n4}, тот ночью не спит`;
@@ -254,9 +244,7 @@
 // console.log(text4);
 // console.log(text4q);
 
-// //////////////////////////////////////////////////////////////////////
-
-// // 			5 пример Интерполяция - выражения
+// 		5 пример Интерполяция - выражения
 
 // function test(){
 // 	return 1000;
@@ -265,9 +253,7 @@
 // const text5 = `Кто пишет ${n5 + 100 + Math.random() + test()}, тот ночью не спит`;
 // console.log(text5);
 
-// //////////////////////////////////////////////////////////////////////
-
-// // 			6 пример HTML шаблоны
+// 			6 пример HTML шаблоны
 
 // const header = 'шаблонные строки';
 // const tags = ['шаблонные строки', 'шаблонные литералы', 'ES6'];
@@ -279,8 +265,6 @@
 // html += `</ul>`;
 
 // document.querySelector('.out').innerHTML = html;
-
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -346,9 +330,115 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// 														ФУНКЦИИ
+
+// 											ФУНКЦИИ С ИМЕНАМИ
+
+// 			1 пример
+// let f1 = document.querySelector('.f-1');
+
+// function one (){
+// 	console.log('work');
+// } 
+// one();
+// f1.onclick = one;
+
+// 			2 пример
+
+// let a = 8;
+// let b = 9;
+
+//  function multiply (){
+// 	console.log(a*b);
+// 	return a*b
+//  }
+
+//  multiply();
+
+ // 			3 пример
+
+// let a = 8;
+// let b = 9;
+//  function multiply (){
+// 	console.log(a * b);
+// 	return a * b;
+//  }
+//  let c1 = multiply ();
+//  let c2 = multiply ();
+// console.log(c1, 10 * c2);
+
+ // 			4 пример
+
+// let a = 8;
+// let b = 9;
+
+//  function multi2(x, y){
+// 	return x * y 
+//  }
+//  console.log( multi2(2,3));
+//  console.log( multi2(4,5));
+//  console.log( multi2(2,a));
 
 
+  // 			5 пример
+
+//  function multi2(x = 8, y = 9){
+// 	return x * y 
+//  }
+//  console.log( multi2(2,3)); 	//6
+//  console.log( multi2());		//72
+//  console.log( multi2(10));		//90
+
+// 												АНОНИМНЫЕ ФУНКЦИИ
+
+// 			1 пример
+
+// let f1 = document.querySelector('.f-1');
+
+// f1.onclick = function(){  //анонимная функция
+// 	console.log('hello');
+// }
+
+// f1.onclick = () => {       //стрелочная функция //анонимная функция
+// 	console.log('hello');
+// }
+
+// // 			2 пример
+
+// document.querySelector('.f-2').onclick = function () {  //анонимная функция
+// 	console.log('++++++');
+// }
+// document.querySelector('.f-2').onclick = () => {   //стрелочная функция //анонимная функция
+// 	console.log('arrow');
+// 	console.log('++++++');
+// }
+
+// // 			3 пример (сокращенные записи)
+
+// function (a,b) {
+// }
+
+// (a,b) => {   //стрелочная функция
+
+// }
+
+///////////////
+
+// let b = 3
+
+// let arrow = function () {
+// 	return 56 * b;
+// }
+// console.log(arrow());
+//  или
+
+// let arrow = a =>  56 * b  //стрелочная функция
+// console.log(arrow());
+// //  или
+
+// let arrow = (a) =>  56 * b  //стрелочная функция
+
+// console.log(arrow());
 
 
-
-
+///////////////
