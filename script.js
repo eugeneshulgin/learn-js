@@ -125,6 +125,95 @@
 
 //////////////////////////////////////////////////////////////////////
 
+// 								Вложенные циклы
 
+// 			1 пример Вложенные циклы
+
+// let out = document.querySelector('.out');
+
+// for (let i = 0; i < 5; i++){
+// 	for(let j = 0; j < 10; j++){
+// 		out.innerHTML += j;
+// 	}
+// 	out.innerHTML += '<br>';
+// }
 
 //////////////////////////////////////////////////////////////////////
+
+// 			2 пример Вложенные циклы
+
+// let out = document.querySelector('.out');
+
+// for (let i = 1; i <= 10; i++){
+// 	for(let j = 1; j<= 10; j++){
+// 		out.innerHTML  += `${i}*${j}=${j * i}<br>`;
+// 	}
+// 	out.innerHTML += '<hr>'
+// }
+
+//////////////////////////////////////////////////////////////////////
+
+////////										ES6: Шаблонные строки Интерполяция
+
+// 			1 пример 
+
+// const text1 = `I enjoy sport`;
+// const text1q = 'I enjoy sport';
+// console.log(text1);
+// console.log(text1q);
+
+// //////////////////////////////////////////////////////////////////////
+
+// // 			2 пример применение кавычек
+
+// const text2 = `I enjoy sport, 'watch TV' and often 'write code'`;
+// const text2q = "I enjoy sport, \'watch TV\' and often \"write code\"";
+// console.log(text2);
+// console.log(text2q);
+
+// //////////////////////////////////////////////////////////////////////
+
+// // 			3 пример мультистроки
+
+// const text3 = `
+// I enjoy sport
+// watch TV
+// write code
+// `
+// console.log(text3);
+
+// //////////////////////////////////////////////////////////////////////
+
+// // 			4 пример Интерполяция - переменные
+
+// const n4 = 'коды';
+// const text4 = `Кто пишет ${n4}, тот ночью не спит`;
+// const text4q = 'Кто пишет ' + n4 + ', тот ночью не спит';
+// console.log(text4);
+// console.log(text4q);
+
+// //////////////////////////////////////////////////////////////////////
+
+// // 			5 пример Интерполяция - выражения
+
+// function test(){
+// 	return 1000;
+// }
+// const n5 = 15;
+// const text5 = `Кто пишет ${n5 + 100 + Math.random() + test()}, тот ночью не спит`;
+// console.log(text5);
+
+// //////////////////////////////////////////////////////////////////////
+
+// // 			6 пример HTML шаблоны
+
+// const header = 'шаблонные строки';
+// const tags = ['шаблонные строки', 'шаблонные литералы', 'ES6'];
+
+// let html = `<h2>${header}</h2><ul>`;
+// for (const x of tags){
+// 	html += `<li>${x}</li>`
+// }
+// html += `</ul>`;
+
+// document.querySelector('.out').innerHTML = html;
