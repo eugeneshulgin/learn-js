@@ -279,3 +279,76 @@
 // html += `</ul>`;
 
 // document.querySelector('.out').innerHTML = html;
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 									округление чисел
+
+// let num = 12.1634455;
+// console.log(num);
+// let numRound = Math.round(num); //округление 
+// console.log(numRound);
+// let numRound = Math.floor(num);//округление в меньшую сторону
+// console.log(numRound);
+// let numRound = Math.ceil(num);//округление в большую сторону
+// console.log(numRound);
+
+// console.log(Math.max(1, 5, 66, 7)); //максимальное число
+// console.log(Math.min(1, 5, 66, 7)); //минимальное число
+// console.log(Math.pow(2,4)); //два в четвертой степени 
+//  let numRandom = Math.random(); //возвращает от нуля до 100% (от 0 до 1, 1 не включая)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 								генерируем рандомные числа
+
+// for(let i = 0; i <= 100; i++){
+// 	// let numberRandom = Math.random() * 20; //(от 0 до 20 random)
+// 	let numberRandom = 40 + (Math.random() * 20); //(от 20 до 40 random)
+// 	let numberRound = Math.round(numberRandom);
+// 	console.log(numberRound)
+// }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//											СТРОКИ
+
+// const myFirstNameLength = myFirstName.length; // выводим длинну строки
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// const myFirstNameToUpperCase = myFirstName.toUpperCase(); // верхний регистр 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// const greeting = 'Good Morning';
+// const updatedGreeting = greeting.replace('Morning', 'Evening'); // меняем Morning на Evening
+// console.log(updatedGreeting);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 										МАССИВ
+
+// const array = [1, 'hi', true, null, undefined];
+//  array.push ('12', 2); // добавляет в массив ещё элементы
+//  console.log(array);
+//  console.log(array.length);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let title = document.querySelector('h1');
+// title.innerHTML = 'Hi'; // innerHTML - меняем то что написано в h1 
+
+// let input = document.querySelector('.input');
+// console.log(input.value); // выводим в консоль, что написано в input
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
