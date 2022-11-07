@@ -313,15 +313,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// 										МАССИВ
-
-// const array = [1, 'hi', true, null, undefined];
-//  array.push ('12', 2); // добавляет в массив ещё элементы
-//  console.log(array);
-//  console.log(array.length);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // let title = document.querySelector('h1');
 // title.innerHTML = 'Hi'; // innerHTML - меняем то что написано в h1 
 
@@ -440,5 +431,155 @@
 
 // console.log(arrow());
 
+//////////////////////////////////////////////////////////////////////////////////////////
 
-///////////////
+// 														РАБОТА С DOM
+
+// const one = document.querySelector('.one');
+
+// one.style.border = '5px solid red';
+// one.style.borderRadius = '10px';
+// one.style.width = '150px';
+
+// console.log(one.style);
+
+// one.classList.add('two'); // добавляем класс
+// one.classList.add('two', 'three'); // добавляем несколько классов
+// one.classList.remove('three'); // удаляем класс
+// one.classList.remove('two', 'three'); // удаляем несколько классов
+
+// const toggle = document.querySelector('.toggle');
+
+// toggle.onclick = function (){   //получаем класс по нажатию кнопки
+// 	this.classList.toggle('three')
+// }
+
+
+
+//														получаем данные от атрибута 
+
+// console.log(oneOne.getAttribute('data'));   // от data
+// console.log(document.querySelectorAll('link')[0].getAttribute('href'));  // от link через массив 
+
+// // 													добавляем атрибут  
+// const oneOne = document.querySelector('.one_one');
+// oneOne.setAttribute('data-num', 6)
+
+// 			1 пример
+
+// let gas = document.querySelectorAll('.gas');
+// for(let i = 0; i < gas.length; i++){
+// 	gas[i].onclick = function(){
+// 		let gallons = document.querySelector('.gallons').value;
+// 		let amount = this.getAttribute('data');
+// 		console.log(gallons * amount);
+// 	}
+// }
+
+// // 			2 пример выводим элемент на страницу
+
+// let a = document.createElement('div'); //создаем div
+// a.innerHTML = 'Hello';						//пишем что будет в div
+// a.classList.add('one')						//добавляем класс в div
+// a.onclick = function(){  					//выводим элемент в alert
+// 	alert('hello')
+// }
+
+// document.querySelector('.test').appendChild(a) //выводим div на страницу
+// console.log(a);
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+//														МАССИВЫ
+
+// let a = 'Tom';
+// let b = '37';
+// let z7 = 'Овен';
+
+// let c = ['Tom',37,'Овен']; // считаем с 0, 1, 2
+// let d = []; // пустой массив
+
+// console.log(c[2]); // Овен
+// console.log(c[5]); // undefined
+// console.log(c); // [ 'Tom', 37, 'Овен' ]
+// console.log(c.length); // длинна массива
+
+
+//////////////////////////////////////////////////////////////////////
+
+//   меняем элемент в массиве
+
+// let man = ['Tom', 37, 'Овен', 220 ];
+// console.log(man);
+// man[0] = 'Jack'; //меняем нулевой элемент в массиве
+// console.log(man);
+
+//////////////////////////////////////////////////////////////////////
+
+//   добавляет в массив ещё элементы
+
+// const array = [1, 'hi', true, null, undefined];
+// array.push ('12', 2); 
+// console.log(array); // [ 1, 'hi', true, null, undefined, '12', 2 ]
+// console.log(array.length); // 7
+
+//////////////////////////////////////////////////////////////////////
+
+// меняем 1 и 4
+
+// let a = [1, 2, 3, 4];
+// console.log(a);
+// console.log(a.length);
+
+// let t = a[0]; // 1
+// a[0] = a [a.length - 1];
+// a[a.length - 1] = t;
+// console.log(a);
+
+// 			2 пример 
+
+// let a = [1, 2, 3, 4];
+// console.log(a);
+// console.log(a.length);
+
+// let t = a[0]; // 1
+// a[0] = a [a.length - 1];
+// a[a.length - 1] = t;
+// console.log(a);
+
+// // for( let i = 0; i < a.length; i++){
+// // 	document.querySelector('.out-1').innerHTML += a[i] + ' '; 
+// // }
+
+// let out = '';
+// for( let i = 0; i < a.length; i++){
+// 	if (a[i] % 2 === 0){    // выводим четные числа
+// 		out += a[i] + ' ';
+// 	}
+
+// }
+// document.querySelector('.out-1').innerHTML = out; // выводим через innerHTML
+
+//////////////////////////////////////////////////////////////////////
+
+// находим максимальное число в массиве 
+
+// let numbers = [1, 2, 4, 66, 77, 3, 65];
+// let max = numbers[0];
+// for (let i = 0; i < numbers.length; i++){
+// 	if (numbers[i] > max){
+// 		max = numbers[i];
+// 	}
+// }
+// console.log('max: ' + max);
+
+//////////////////////////////////////////////////////////////////////
+
+// находим сумму в массиве 
+
+// let numbers = [1, 2, 4, 66, 77, 3, 65];
+// let sum = 0;
+// for (let i = 0; i < numbers.length; i++){
+// 	sum = sum + numbers[i];
+// }
+// console.log(sum);
