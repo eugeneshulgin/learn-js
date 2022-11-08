@@ -828,4 +828,84 @@ for (let key in arr){
 // }
 // console.log(out);
 // document.querySelector('.out').innerHTML = out; //выводим на страницу
+ОБЪЕКТЫ (Ассоциативные массивы)
+
+// const user = {
+// 	name : 'Tom',
+// 	age : 30,
+// 	city : 'Minsk',
+// 	'like color': 'green',
+// 	info: 'empty',
+// };
+// user.block = 'box'; // добавляем значение в объект
+// user.info = 666;	// перезаписываем значение объекта
+// delete user.info; // удаляем значение
+// delete user.block; // удаляем значение
+
+// console.log(user); // выводим объект
+// console.log(user.city); // выводим значение city
+
+// let k = 'name';	
+// console.log(user[k]); // выводим значение name
+
+// let out = '';
+// for( let key in user){
+// 	out += `${key} - ${user[key]}<br>`
+// }
+// console.log(out);
+// document.querySelector('.out').innerHTML = out; //выводим на страницу
+
+ОБЪЕКТЫ (Ассоциативные массивы)
+
+// const user = {
+// 	name : 'Tom',
+// 	age : 30,
+// 	city : 'Minsk',
+// 	'like color': 'green',
+// 	info: 'empty',
+// };
+// user.block = 'box'; // добавляем значение в объект
+// user.info = 666;	// перезаписываем значение объекта
+// delete user.info; // удаляем значение
+// delete user.block; // удаляем значение
+
+// console.log(user); // выводим объект
+// console.log(user.city); // выводим значение city
+
+// let k = 'name';	
+// console.log(user[k]); // выводим значение name
+
+// let out = '';
+// for( let key in user){
+// 	out += `${key} - ${user[key]}<br>`
+// }
+// console.log(out);
+// document.querySelector('.out').innerHTML = out; //выводим на страницу
+ОБЪЕКТЫ (Ассоциативные массивы)
+
+// const user = {
+// 	name : 'Tom',
+// 	age : 30,
+// 	city : 'Minsk',
+// 	'like color': 'green',
+// 	info: 'empty',
+// };
+// user.block = 'box'; // добавляем значение в объект
+// user.info = 666;	// перезаписываем значение объекта
+// delete user.info; // удаляем значение
+// delete user.block; // удаляем значение
+
+// console.log(user); // выводим объект
+// console.log(user.city); // выводим значение city
+
+// let k = 'name';	
+// console.log(user[k]); // выводим значение name
+
+// let out = '';
+// for( let key in user){
+// 	out += `${key} - ${user[key]}<br>`
+// }
+// console.log(out);
+// document.querySelector('.out').innerHTML = out; //выводим на страницу
+
 
