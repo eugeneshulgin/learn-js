@@ -584,7 +584,9 @@
 // }
 // console.log(sum);
 
-//////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+
+// 									МЕТОДЫ   МАССИВОВ
 
 // 			push - добавляем в массив элементы
 
@@ -636,3 +638,140 @@
 // console.log(a); // [ 1, 2, 3, 4 ]
 // a.unshift(12,33); // добавляет элемент вначале массива
 // console.log(a); // [12, 33, 1, 2, 3, 4]
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// 										цикл for of
+//  1 пример перебор массива
+
+// let arr = [3, 6, 9, 4];
+
+// for(let i = 0; i < arr.length; i++){
+// 	console.log(arr[i]);
+// }
+
+//  2 пример перебор массива
+
+let arr = [3, 6, 9, 4];
+
+for (let key in arr){
+	console.log(arr[key]);
+}
+//											 ДВУМЕРНЫЕ МАССИВЫ
+
+// 1  пример
+
+// let b = [
+// 	[1,2,3],
+// 	[4,5,6],
+// 	[7,8,9],
+// ]
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for( let j = 0; j < c.length; j++)
+// 	console.log(c[j]); 
+// }
+
+// //1
+// //2
+// //3
+// //4
+// //5
+// //6
+// //7
+// //8
+// //9
+
+// 2  пример
+
+// let b = [
+// 	[1,2,3],
+// 	[4,5,6],
+// 	[7,8,9],
+// ]
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for( let j = c.length - 1; j >= 0; j--)
+// 	console.log(c[j]); 
+// }
+
+// //3
+// //2
+// //1
+// //6
+// //5
+// //4
+// //9
+// //8
+// //7
+
+// 3  пример
+
+// let b = [
+// 		[1,2,3],
+// 		[4,5,6],
+// 		[7,8,9],
+// 	]
+// let out = '';
+
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for(let j = 0; j < c.length; j++){
+// 		console.log(b[i][j]);
+// 		out += b[i][j] + ' ';
+// 	}
+// 	out += '<br>';
+// }
+// document.querySelector('.out').innerHTML =  out;
+
+// 4  пример
+
+// let b = [
+// 		[1,2,3],
+// 		[4,5,6],
+// 		[7,8,9],
+// 	]
+// let out = '';
+
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for(let j = 0; j < c.length; j++){
+// 		console.log(b[i][j]);
+// 		if (b[i][j] > 4 ) {
+// 			out += b[i][j] + ' ';
+// 		}
+// 	}
+// 	out += '<br>';
+// }
+// document.querySelector('.out').innerHTML =  out;
+// console.log(out);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// 										ОБЪЕКТЫ (Ассоциативные массивы)
+
+// const user = {
+// 	name : 'Tom',
+// 	age : 30,
+// 	city : 'Minsk',
+// 	'like color': 'green',
+// 	info: 'empty',
+// };
+// user.block = 'box'; // добавляем значение в объект
+// user.info = 666;	// перезаписываем значение объекта
+// delete user.info; // удаляем значение
+// delete user.block; // удаляем значение
+
+// console.log(user); // выводим объект
+// console.log(user.city); // выводим значение city
+
+// let k = 'name';	
+// console.log(user[k]); // выводим значение name
+
+// let out = '';
+// for( let key in user){
+// 	out += `${key} - ${user[key]}<br>`
+// }
+// console.log(out);
+// document.querySelector('.out').innerHTML = out; //выводим на страницу
+
