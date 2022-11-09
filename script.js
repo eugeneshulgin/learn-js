@@ -658,14 +658,47 @@
 
 //				filter создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции
 
-let a = [4, 5, 12, 200, 1, 0, -2];
+// let a = [4, 5, 12, 200, 1, 0, -2];
 
-let c = a.filter(function(item, index){
-	if(item > 0){
-		return true;
-	}
-})
-console.log(c);
+// let c = a.filter(function(item, index){
+// 	if(item > 0){
+// 		return true;
+// 	}
+// })
+// console.log(c);
+
+//				split разбивает объект String на массив строк путём разделения строки указанной подстрокой.
+
+// let a = 'hello my friend';
+// console.log(a.split([' '])); //указываем разделитель // ['hello', 'my', 'friend']
+
+//				join объединяет все элементы массива в строку.
+
+// let a = [1,2,3];
+// console.log(a.join([', '])); // 1, 2, 3
+// console.log(typeof a.join()); //string
+// console.log(a);
+
+//				forEach выполняет указанную функцию один раз для каждого элемента в массиве
+
+// let b = ['one','two','three'];
+
+// b.forEach(function(elem, index){
+// 	console.log(index);
+// 	console.log(elem);
+// 	console.log('-----');
+// });
+
+// 0
+// one
+// -----
+// 1
+// two
+// -----
+// 2
+// three
+// -----
+
 /////////////////////////////////////////////////////////////////////////////////////
 
 // 										цикл for of
