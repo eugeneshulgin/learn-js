@@ -645,6 +645,7 @@
 //  1 пример перебор массива
 
 // let arr = [3, 6, 9, 4];
+// console.log(arr);
 
 // for(let i = 0; i < arr.length; i++){
 // 	console.log(arr[i]);
@@ -652,11 +653,62 @@
 
 //  2 пример перебор массива
 
-let arr = [3, 6, 9, 4];
+// let arr = [3, 6, 9, 4];
 
-for (let key in arr){
-	console.log(arr[key]);
-}
+// for (let key in arr){
+// 	console.log(arr[key]);
+// }
+
+//  3 пример перебор массива
+
+// let arr = [3, 6, 9, 4];
+
+// for (let key of arr){
+// 	console.log(key);
+// }
+
+//  4-1 пример перебор массива
+// let divs1 = document.getElementsByClassName('num');
+// let divs2 = document.querySelectorAll('.num');
+// console.log(divs1);
+// console.log(divs2);
+
+// for(let i = 0; i < divs1.length; i++){
+// 	console.log(divs1[i]);
+// }
+
+// for(let i = 0; i < divs2.length; i++){
+// 	console.log(divs2[i]);
+// }
+
+//  4-2 пример перебор массива
+
+// let divs1 = document.getElementsByClassName('num');
+// let divs2 = document.querySelectorAll('.num');
+// console.log(divs1);
+// console.log(divs2);
+
+// for (let key in divs1){
+// 	console.log(divs1[key]);
+// }
+// for (let key in divs2){
+// 	console.log(divs2[key]);
+// }
+
+//  4-3 пример перебор массива
+
+// let divs1 = document.getElementsByClassName('num');
+// let divs2 = document.querySelectorAll('.num');
+// console.log(divs1);
+// console.log(divs2);
+
+// for (let item of divs1){
+// 	console.log(item);
+// }
+// for (let item of divs2){
+// 	console.log(item);
+// }
+
 //											 ДВУМЕРНЫЕ МАССИВЫ
 
 // 1  пример
