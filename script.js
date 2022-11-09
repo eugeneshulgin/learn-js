@@ -137,7 +137,7 @@
 
 //////////////////////////////////////////////////////////////////////
 
-////////						 циклы for while
+////////						 цикл for 
 
 // 			1 пример for
 
@@ -156,7 +156,68 @@
 
 // }
 
+////////						 цикл while
 
+// for (let i =0; i < 6; i++)
+// console.log(i);
+
+// let k = 0;
+// while(k < 5){
+	
+// 	console.log('k: ' + k);
+// 	k++;
+// }
+// 		1 пример сумма чисел от 0 до 10
+
+// let sum = 0;
+// let p = 0;
+// while(p <= 10){
+// 	sum = sum + p;
+// 	p++;
+// }
+// console.log(sum); //55
+
+// 		2 пример
+// let out = document.querySelector('.out')
+// let p = 0; 
+// let outStr = '';
+
+// while (p < 4){
+// 	let p1 = 0;
+// 	while(p1 < 4){
+// 		outStr += '*';
+// 		p1++;
+// 	}
+// 	outStr += '<br>';
+// 	p++;
+// }
+// out.innerHTML = outStr;
+
+////////						 цикл Do while
+
+//			1 пример
+
+// let out = document.querySelector('.out')
+// let p = 0; 
+// let outStr = '';
+// let flag = 3;
+
+// while (p < 4){
+// 	let p1 = 0;
+// 	while(p1 < 4){
+// 		if(p1<flag){
+// 			outStr += '0'
+// 		}
+// 		else{
+// 			outStr += '*';
+// 		}
+// 		p1++;	
+// 	}
+// 	flag--;
+// 	outStr += '<br>';
+// 	p++;
+// }
+// out.innerHTML = outStr;
 
 //////////////////////////////////////////////////////////////////////
 
@@ -455,7 +516,6 @@
 // toggle.onclick = function (){   //получаем класс по нажатию кнопки
 // 	this.classList.toggle('three')
 // }
-
 
 
 //														получаем данные от атрибута 
