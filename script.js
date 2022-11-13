@@ -947,3 +947,25 @@
 // console.log(out);
 // document.querySelector('.out').innerHTML = out; //выводим на страницу
 
+////////////////////////////////////////////////////////////////////////
+
+//													 Работа с DOM
+
+const out = document.querySelector('.out');
+
+out.style.width = '100px';
+out.style.paddingBottom = '40px';
+out.style.background = 'red';
+out.classList.add('two','three');
+out.classList.remove('three');
+
+const button = document.querySelector('.toggle');
+
+button.onclick = function(){
+	this.classList.toggle('three'); 
+}
+
+//					атрибуты
+
+console.log(out.getAttribute('data'));
+console.log(document.querySelector('link').getAttribute('href'));
