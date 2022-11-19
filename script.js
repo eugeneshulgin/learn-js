@@ -291,6 +291,160 @@
 
 //////////////////////////////////////////////////////////////////////
 
+
+// 										цикл for of
+
+//			пример перебор массива с помощью цикла for  in (желательно только с objects)
+
+// let arr = [3, 6, 9, 4];
+
+// for (let key in obj){			
+// 	console.log(obj[key]);
+// }
+
+//			пример перебор массива с помощью цикла for  of
+
+// let arr = [3, 6, 9, 4];
+
+// for (let key of arr){				// for of
+// 	console.log(key);
+// }
+
+//  4-1 пример перебор массива
+// let divs1 = document.getElementsByClassName('num');
+// let divs2 = document.querySelectorAll('.num');
+// console.log(divs1);
+// console.log(divs2);
+
+// for(let i = 0; i < divs1.length; i++){
+// 	console.log(divs1[i]);
+// }
+
+// for(let i = 0; i < divs2.length; i++){
+// 	console.log(divs2[i]);
+// }
+
+//  4-2 пример перебор массива			// for  in
+
+// let divs1 = document.getElementsByClassName('num');
+// let divs2 = document.querySelectorAll('.num');
+// console.log(divs1);
+// console.log(divs2);
+
+// for (let key in divs1){
+// 	console.log(divs1[key]);
+// }
+// for (let key in divs2){
+// 	console.log(divs2[key]);
+// }
+
+//  4-3 пример перебор массива			// for of
+
+// let divs1 = document.getElementsByClassName('num');
+// let divs2 = document.querySelectorAll('.num');
+// console.log(divs1);
+// console.log(divs2);
+
+// for (let item of divs1){
+// 	console.log(item);
+// }
+// for (let item of divs2){
+// 	console.log(item);
+// }
+
+//											 ДВУМЕРНЫЕ МАССИВЫ
+
+// 1  пример
+
+// let b = [
+// 	[1,2,3],
+// 	[4,5,6],
+// 	[7,8,9],
+// ]
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for( let j = 0; j < c.length; j++)
+// 	console.log(c[j]); 
+// }
+
+// //1
+// //2
+// //3
+// //4
+// //5
+// //6
+// //7
+// //8
+// //9
+
+// 2  пример
+
+// let b = [
+// 	[1,2,3],
+// 	[4,5,6],
+// 	[7,8,9],
+// ]
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for( let j = c.length - 1; j >= 0; j--)
+// 	console.log(c[j]); 
+// }
+
+// //3
+// //2
+// //1
+// //6
+// //5
+// //4
+// //9
+// //8
+// //7
+
+// 3  пример
+
+// let b = [
+// 		[1,2,3],
+// 		[4,5,6],
+// 		[7,8,9],
+// 	]
+// let out = '';
+
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for(let j = 0; j < c.length; j++){
+// 		console.log(b[i][j]);
+// 		out += b[i][j] + ' ';
+// 	}
+// 	out += '<br>';
+// }
+// document.querySelector('.out').innerHTML =  out;
+
+// 4  пример
+
+// let b = [
+// 		[1,2,3],
+// 		[4,5,6],
+// 		[7,8,9],
+// 	]
+// let out = '';
+
+// for(let i = 0; i < b.length; i++){
+// 	let c = b[i];
+// 	for(let j = 0; j < c.length; j++){
+// 		console.log(b[i][j]);
+// 		if (b[i][j] > 4 ) {
+// 			out += b[i][j] + ' ';
+// 		}
+// 	}
+// 	out += '<br>';
+// }
+// document.querySelector('.out').innerHTML =  out;
+// console.log(out);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////
+
 ////////										ES6: Шаблонные строки Интерполяция
 
 // 			1 пример 
@@ -778,172 +932,6 @@
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-// 										цикл for of
-//  1 пример перебор массива
-
-// let arr = [3, 6, 9, 4];
-// console.log(arr);
-
-// for(let i = 0; i < arr.length; i++){
-// 	console.log(arr[i]);
-// }
-
-//  2 пример перебор массива
-
-// let arr = [3, 6, 9, 4];
-
-// for (let key in arr){			// for 
-// 	console.log(arr[key]);
-// }
-
-//  3 пример перебор массива
-
-// let arr = [3, 6, 9, 4];
-
-// for (let key of arr){				// for of
-// 	console.log(key);
-// }
-
-let arr = document.querySelectorAll('.one');
-for(let item of arr){
-	let arr2 = item.innerHTML
-	let arr3 = arr2.split([]);
-	console.log( arr3);
-	
-}
-
-//  4-1 пример перебор массива
-// let divs1 = document.getElementsByClassName('num');
-// let divs2 = document.querySelectorAll('.num');
-// console.log(divs1);
-// console.log(divs2);
-
-// for(let i = 0; i < divs1.length; i++){
-// 	console.log(divs1[i]);
-// }
-
-// for(let i = 0; i < divs2.length; i++){
-// 	console.log(divs2[i]);
-// }
-
-//  4-2 пример перебор массива
-
-// let divs1 = document.getElementsByClassName('num');
-// let divs2 = document.querySelectorAll('.num');
-// console.log(divs1);
-// console.log(divs2);
-
-// for (let key in divs1){
-// 	console.log(divs1[key]);
-// }
-// for (let key in divs2){
-// 	console.log(divs2[key]);
-// }
-
-//  4-3 пример перебор массива
-
-// let divs1 = document.getElementsByClassName('num');
-// let divs2 = document.querySelectorAll('.num');
-// console.log(divs1);
-// console.log(divs2);
-
-// for (let item of divs1){
-// 	console.log(item);
-// }
-// for (let item of divs2){
-// 	console.log(item);
-// }
-
-//											 ДВУМЕРНЫЕ МАССИВЫ
-
-// 1  пример
-
-// let b = [
-// 	[1,2,3],
-// 	[4,5,6],
-// 	[7,8,9],
-// ]
-// for(let i = 0; i < b.length; i++){
-// 	let c = b[i];
-// 	for( let j = 0; j < c.length; j++)
-// 	console.log(c[j]); 
-// }
-
-// //1
-// //2
-// //3
-// //4
-// //5
-// //6
-// //7
-// //8
-// //9
-
-// 2  пример
-
-// let b = [
-// 	[1,2,3],
-// 	[4,5,6],
-// 	[7,8,9],
-// ]
-// for(let i = 0; i < b.length; i++){
-// 	let c = b[i];
-// 	for( let j = c.length - 1; j >= 0; j--)
-// 	console.log(c[j]); 
-// }
-
-// //3
-// //2
-// //1
-// //6
-// //5
-// //4
-// //9
-// //8
-// //7
-
-// 3  пример
-
-// let b = [
-// 		[1,2,3],
-// 		[4,5,6],
-// 		[7,8,9],
-// 	]
-// let out = '';
-
-// for(let i = 0; i < b.length; i++){
-// 	let c = b[i];
-// 	for(let j = 0; j < c.length; j++){
-// 		console.log(b[i][j]);
-// 		out += b[i][j] + ' ';
-// 	}
-// 	out += '<br>';
-// }
-// document.querySelector('.out').innerHTML =  out;
-
-// 4  пример
-
-// let b = [
-// 		[1,2,3],
-// 		[4,5,6],
-// 		[7,8,9],
-// 	]
-// let out = '';
-
-// for(let i = 0; i < b.length; i++){
-// 	let c = b[i];
-// 	for(let j = 0; j < c.length; j++){
-// 		console.log(b[i][j]);
-// 		if (b[i][j] > 4 ) {
-// 			out += b[i][j] + ' ';
-// 		}
-// 	}
-// 	out += '<br>';
-// }
-// document.querySelector('.out').innerHTML =  out;
-// console.log(out);
-
-/////////////////////////////////////////////////////////////////////////////////////
 
 // 										ОБЪЕКТЫ (Ассоциативные массивы)
 
