@@ -142,27 +142,37 @@
 // 			1 пример for
 
 // let div = document.querySelectorAll('.one');
-// console.log(div);
+
+// // console.log(div);
 
 // for (let i = 0; i < div.length; i++){
+
 // 	console.log(div[i]);
 // 	div[i].style.background = 'red'; // меняем цвет div по циклу
 // 	// if(i == 4 ) break; // принудительно остановить
 // 	div[i].onclick = two; // по клику выполняем function	
-// }
+// 	let list = div[i].innerHTML
+// 	console.log(list);
 
+// }
 // function two() {
 // 	console.log('work!!!');
 
 // }
 
+// 			2 пример for
+
+// for (let i = 0; i < 10; i++){
+// 	console.log(i);
+// }
+
 ////////						 цикл while
 
-// for (let i =0; i < 6; i++)
-// console.log(i);
-
 // let k = 0;
-// while(k < 5){
+// while(k < 7){
+// 	if (k === 3){
+// 		break
+// 	}
 	
 // 	console.log('k: ' + k);
 // 	k++;
@@ -193,7 +203,14 @@
 // }
 // out.innerHTML = outStr;
 
-////////						 цикл Do while
+////////						 цикл Do while (сначало выводим код, потом его проверяем)
+
+// let count = 10;
+// do {
+// 	console.log(count);  
+// 	count--;
+// } while(count>7)
+
 
 //			1 пример
 
@@ -951,21 +968,30 @@
 
 //													 Работа с DOM
 
-const out = document.querySelector('.out');
+// const out = document.querySelector('.out');
 
-out.style.width = '100px';
-out.style.paddingBottom = '40px';
-out.style.background = 'red';
-out.classList.add('two','three');
-out.classList.remove('three');
+// out.style.width = '100px';
+// out.style.paddingBottom = '40px';
+// out.style.background = 'red';
+// out.classList.add('two','three');
+// out.classList.remove('three');
 
-const button = document.querySelector('.toggle');
+// const button = document.querySelector('.toggle');
 
-button.onclick = function(){
-	this.classList.toggle('three'); 
+// button.onclick = function(){
+// 	this.classList.toggle('three'); 
+// }
+
+// //					атрибуты
+
+// console.log(out.getAttribute('data'));
+// console.log(document.querySelector('link').getAttribute('href'));
+
+
+
+///// пример цикл for
+
+let arr = [3,4,0,2,7,1,6];
+for(let i = 0; i < arr.length; i++){
+	console.log(arr[i]*2);
 }
-
-//					атрибуты
-
-console.log(out.getAttribute('data'));
-console.log(document.querySelector('link').getAttribute('href'));

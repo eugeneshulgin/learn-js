@@ -1,4 +1,4 @@
-.one {
+/* .one {
 	margin: 15px;
 	border: 2px solid black;
 	width: 50px;
@@ -41,4 +41,10 @@
 
 .three {
 	color: pink;
+} */
+
+/* 										Работа с DOM 							*/
+
+.three {
+	border: 3px solid green;
 }
