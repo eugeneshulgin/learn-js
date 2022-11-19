@@ -792,7 +792,7 @@
 
 // let arr = [3, 6, 9, 4];
 
-// for (let key in arr){
+// for (let key in arr){			// for 
 // 	console.log(arr[key]);
 // }
 
@@ -800,9 +800,17 @@
 
 // let arr = [3, 6, 9, 4];
 
-// for (let key of arr){
+// for (let key of arr){				// for of
 // 	console.log(key);
 // }
+
+let arr = document.querySelectorAll('.one');
+for(let item of arr){
+	let arr2 = item.innerHTML
+	let arr3 = arr2.split([]);
+	console.log( arr3);
+	
+}
 
 //  4-1 пример перебор массива
 // let divs1 = document.getElementsByClassName('num');
@@ -989,9 +997,5 @@
 
 
 
-///// пример цикл for
 
-let arr = [3,4,0,2,7,1,6];
-for(let i = 0; i < arr.length; i++){
-	console.log(arr[i]*2);
-}
+
