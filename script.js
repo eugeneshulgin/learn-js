@@ -989,27 +989,3 @@
 
 
 
-
-// // for (let i = 0; i < 20; i+=2){
-// // 	arr.push(i)
-	
-// // }
-
-// // for (let i = 30; i > 0; i--){
-// // 	arr.push(i)
-// // }
-
-// // for (let i = 0; i < 10; i++){
-// // 	arr.push(i*i)
-	
-// // }
-
-// let arr = [7,4,2,1,0,6,2,6,2,15,4,16];
-// let count = 0;
-// for (let i = 0; i < arr.length; i++){
-// 	if (arr[i]%2==0){
-// 		count++;
-// 	}
-	
-// }
-// console.log(`Количество четных чисел: ${count}`);
