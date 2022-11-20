@@ -912,12 +912,14 @@
 
 //				forEach выполняет указанную функцию один раз для каждого элемента в массиве
 
-// let b = ['one','two','three'];
+// let b = [2, 4, 7, 3];
 
-// b.forEach(function(elem, index){
-// 	console.log(index);
-// 	console.log(elem);
-// 	console.log('-----');
+// b.forEach(function(elem, index, array){
+// 	console.log(`
+// 	'elem: ${elem}
+// 	'index: ${index}
+// 	'array: ${array}
+// 	`);
 // });
 
 // 0
@@ -929,14 +931,8 @@
 // 2
 // three
 // -----
-let arr = [5,3,6,1,0,8];
-arr.forEach(function(item, i, array){
-	console.log(`
-	элемент ${item}
-	индекс ${i}
-	массив ${array}
-	`);
-})
+
+
 /////////////////////////////////////////////////////////////////////////////////////
 
 
