@@ -507,15 +507,21 @@
 // let num = 12.1634455;
 // console.log(num);
 // let numRound = Math.round(num); //округление 
-// console.log(numRound);
+// console.log(numRound);	//12
 // let numRound = Math.floor(num);//округление в меньшую сторону
-// console.log(numRound);
+// console.log(numRound);	//12
 // let numRound = Math.ceil(num);//округление в большую сторону
-// console.log(numRound);
+// console.log(numRound);	//13
+// let numRound = Math.trunc(num);// оставляет целую часть	
+// console.log(numRound);	//12
 
-// console.log(Math.max(1, 5, 66, 7)); //максимальное число
-// console.log(Math.min(1, 5, 66, 7)); //минимальное число
+// let numRound = num.toFixed(2);// оставляет 2 числа после запятой	
+// console.log(numRound);	//12.16
+
+// console.log(Math.max(1, 5, 66, 7)); //максимальное число		// 66
+// console.log(Math.min(1, 5, 66, 7)); //минимальное число 		/ 1
 // console.log(Math.pow(2,4)); //два в четвертой степени 
+// console.log(Math.sqrt(16)); //корень из числа 16 // 4
 //  let numRandom = Math.random(); //возвращает от нуля до 100% (от 0 до 1, 1 не включая)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -737,29 +743,19 @@
 // console.log(c); // [ 'Tom', 37, 'Овен' ]
 // console.log(c.length); // длинна массива
 
-
-//////////////////////////////////////////////////////////////////////
-
 //   меняем элемент в массиве
-
 // let man = ['Tom', 37, 'Овен', 220 ];
 // console.log(man);
 // man[0] = 'Jack'; //меняем нулевой элемент в массиве
 // console.log(man);
 
-//////////////////////////////////////////////////////////////////////
-
 //   добавляет в массив ещё элементы
-
 // const array = [1, 'hi', true, null, undefined];
 // array.push ('12', 2); 
 // console.log(array); // [ 1, 'hi', true, null, undefined, '12', 2 ]
 // console.log(array.length); // 7
 
-//////////////////////////////////////////////////////////////////////
-
 // меняем 1 и 4
-
 // let a = [1, 2, 3, 4];
 // console.log(a);
 // console.log(a.length);
@@ -987,5 +983,36 @@
 // console.log(document.querySelector('link').getAttribute('href'));
 
 
+///////// тесты
 
+// let srt = 'text';
+// let a = 7;
+// console.log(srt);
+// console.log(`
+// 	${srt}
+// 	${a}
+// `);
+// let b = Math.max(1,4,6,3,8,2)
+// console.log(b);
+
+// let c = Math.pow(3,4)
+// console.log(c);
+
+// let f = 2.6
+// let numRound = Math.floor(f);//округление в меньшую сторону
+// console.log(numRound);
+// let f = 2.2
+// let numRound = Math.ceil(f);//округление в меньшую сторону
+// console.log(numRound);
+
+// let f = 2.4
+// let numRound = Math.round(f);//округление в меньшую сторону
+// console.log(numRound);
+
+// let f = 2.7
+// let numRound = Math.trunc(f);// оставляет целую часть
+// console.log(numRound);
+
+let arr = [ 5, 2, 'str', true]
+console.log(arr[2] = 'text');
 
