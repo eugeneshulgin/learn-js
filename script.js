@@ -817,6 +817,13 @@
 
 // 									МЕТОДЫ   МАССИВОВ
 
+// 			indexOf - возвращает первый индекс, по которому данный элемент  
+//				может быть найден в массиве или -1, если такого индекса нет.
+
+const a = [9, 8, 7, 5, 7, 5, 2];
+const b = ['Hi', 'hello'];
+
+
 // 			push - добавляем в массив элементы
 
 // const a = [1,2,3,4,5,6,7,8,9];
@@ -1013,6 +1020,22 @@
 // let numRound = Math.trunc(f);// оставляет целую часть
 // console.log(numRound);
 
-let arr = [ 5, 2, 'str', true]
-console.log(arr[2] = 'text');
+// let arr = [ 5, 2, 'str', true]
+// console.log(arr[2] = 'text');
 
+// const a = [9,8,7,5];
+// const b = ['hi', 'hello']
+// // console.log(a.indexOf(7));
+// // if(a.indexOf(7) !== -1){
+// // 	console.log('yes');
+// // }else{
+// // 	console.log('no');
+// // }
+// console.log(b.indexOf('hello'));
+// console.table(b);
+
+// if(a.indexOf(7) !== -1){
+// 	console.log('yes');
+// }else{
+// 	console.log('no');
+// }
