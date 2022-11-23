@@ -820,9 +820,23 @@
 // 			indexOf - возвращает первый индекс, по которому данный элемент  
 //				может быть найден в массиве или -1, если такого индекса нет.
 
-const a = [9, 8, 7, 5, 7, 5, 2];
-const b = ['Hi', 'hello'];
+// const a = [9, 5, 7, 5, 7, 5, 2];
+// const b = ['Hi', 'hello'];
+// // console.log(a);
+// // console.log(a.indexOf(5)); // находит первую 5 из списка
 
+// console.log(a.indexOf(5, 3)); 
+
+// function indexOfEmul(ar,item,from = 0){
+
+// 	for(let i = from; i<ar.length; i++){
+// 		if(ar[i] === item){
+// 			return i;
+// 		}
+// 	}
+	
+// 	return -1;
+// }
 
 // 			push - добавляем в массив элементы
 
