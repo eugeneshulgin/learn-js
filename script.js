@@ -1053,3 +1053,103 @@
 // }else{
 // 	console.log('no');
 // }
+// let search = document.querySelector('.search')
+// let btn = document.querySelector('.btn');
+
+// btn.addEventListener('click', search1) 
+
+// function search1(){
+// 	console.log(search.value)
+// }
+// let car = {
+// 	name: 'Renault',
+// 	model: 'laguna',
+// 	price: '1300'
+// }
+// console.log('car obj', car);
+// let carStr = JSON.stringify(car);
+// console.log('car obj', carStr);
+
+
+// const a = [9, 8, 7, 5];
+// console.log(a.indexOf(7));
+// if (a.indexOf(7) !== -1){
+// 	console.log('yes');
+// }
+// else {
+// 	console.log('no');
+// }
+
+// const b = ['hi', 'hello'];
+// console.log(b.indexOf('hello'));
+// // if (a.indexOf('hi') !== -1){
+// // 	console.log('yes');
+// // }
+// // else {
+// // 	console.log('no');
+// // }
+
+// const a = [3, 9, 8, 7, 5, 7, 5, 2];
+// // console.log(a.indexOf(8));
+// // console.table(a)
+
+// function indexOfEmul(ar, item, from = 0){
+// 	for( let i = from; i < ar.length; i++){
+// 		if (ar[i] === item){
+// 			return i;
+// 		}
+// 	}
+// 	return -1
+// }
+
+// console.log(indexOfEmul(a, 8));
+// const a = [1, 2, 3, 4, 5, 6, 7, 8];
+// a.forEach((elem) => {
+// 	console.log(elem);
+// })
+
+
+
+
+// !!!
+// const data = [
+// 	{
+// 		name : 'Alex',
+// 		age : '25',
+// 	},
+// 	{
+// 		name : 'Tom',
+// 		age : '20',
+// 	},
+// ];
+// const getAge = [];
+// const getName = [];
+
+// data.forEach(elem =>{
+// 	getAge.push(elem.age)
+// })
+// console.log(getAge);
+
+
+// data.forEach(elem =>{
+// 	getName.push(elem.name)
+// })
+// console.log(getName);
+
+// /////////////////////////////////
+
+// const arr = ['a', 'b', 'c', 'd', 'e'];
+
+// arr.forEach = (item) => {
+// 	console.log(item);
+// }
+// console.log(arr);
+
+// function dd (item){
+// 	console.log(item);
+// }
+// const arr = ['a', 'b', 'c', 'd', 'e'];
+// arr.forEach((item,i,array) => {
+// 	console.log(item,i,array);
+// 	console.log('======');
+// })
