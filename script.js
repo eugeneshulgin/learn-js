@@ -962,13 +962,20 @@
 // 	'like color': 'green',
 // 	info: 'empty',
 // };
+
+// или так
 // user.block = 'box'; // добавляем значение в объект
 // user.info = 666;	// перезаписываем значение объекта
-// delete user.info; // удаляем значение
-// delete user.block; // удаляем значение
+// // delete user.info; // удаляем значение
+// // delete user.block; // удаляем значение
 
 // console.log(user); // выводим объект
 // console.log(user.city); // выводим значение city
+
+// или так
+
+// user['info'] = 555; // перезаписываем значение объекта
+// console.log(user); // выводим объект
 
 // let k = 'name';	
 // console.log(user[k]); // выводим значение name
@@ -1203,3 +1210,25 @@
 // 	console.log(temp);
 // }
 // sort(items)
+
+// тест 3
+
+// const mixData = [ 
+// 	10, 
+// 	'Pussy', 
+// 	{
+// 		name: 'Kitty',
+// 	 	year: 3
+// 	},
+// 	['мяу', 'мур', 'РрррР',
+// 		{
+// 			name: 'Lucky', 
+// 			year: 3,
+// 			family: ['papa', 'mama']
+// 		}	
+// 	]
+// ];
+// console.log(mixData[2].name); // достали Kitty
+// console.log(mixData[3][0]); // достали мяу
+// console.log(mixData[3][3].family[1]); 
+
