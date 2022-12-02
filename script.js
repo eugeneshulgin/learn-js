@@ -989,6 +989,14 @@
 
 ////////////////////////////////////////////////////////////////////////
 
+//													 JSON
+
+// JSON.parse // конвертируем строку в объект
+
+// JSON.stringify // конвертируем объект в строку
+
+////////////////////////////////////////////////////////////////////////
+
 //													 Работа с DOM
 
 // const out = document.querySelector('.out');
@@ -1232,3 +1240,21 @@
 // console.log(mixData[3][0]); // достали мяу
 // console.log(mixData[3][3].family[1]); 
 
+//	test 4
+// const object = {
+// 	firstName: 'Tom',
+// 	lastName: 'Gans',
+// 	adress: {
+// 		street: 'Sputnik 1',
+// 		city: 'Minsk',
+// 		postCode: 1011100
+// 	},
+// 	phoneNumper: [
+// 		'1 23 456 789',
+// 		'9 87 654 321'
+// 	]
+// }
+// const json = JSON.stringify(object)
+// console.log(json);
+// const parse = JSON.parse(json)
+// console.log(parse);
